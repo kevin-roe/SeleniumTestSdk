@@ -3,20 +3,20 @@ package org.kevinroe;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Driver {
+class Driver {
     public WebDriver webdriver;
 
 
-    public void hello(String name) {
+    void hello(String name) {
         System.out.println("Hello " + name + "!");
     }
 
-    public WebDriver start() {
+     WebDriver start() {
         webdriver = new ChromeDriver();
         return webdriver;
     }
 
-    public void quit() {
+    void quit() {
         webdriver.quit();
     }
 }
